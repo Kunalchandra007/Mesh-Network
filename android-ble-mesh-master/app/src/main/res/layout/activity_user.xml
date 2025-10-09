@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#4CAF50"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Panel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:onClick="goBack" />
+
+    </LinearLayout>
+
+    <!-- Status Display -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Ready"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:padding="12dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Location Display -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: Getting location..."
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="16dp" />
+
+    <!-- SOS Button -->
+    <Button
+        android:id="@+id/sosButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 EMERGENCY SOS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/emergency_button"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Share Location Button -->
+    <Button
+        android:id="@+id/shareLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Current Location"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Messages Display -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages from Admin:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Messages will appear here..."
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:background="#ffffff"
+        android:minHeight="120dp"
+        android:scrollbars="vertical" />
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions:\n• Press SOS button in case of emergency\n• Your location will be automatically sent\n• Admin messages will appear in the message area\n• This app works without internet connection"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

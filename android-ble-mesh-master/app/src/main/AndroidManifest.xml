@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" />
+
+    <application
+        android:name=".AppGlobal"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        
+        <!-- Google Maps API Key will be added later -->
+        
+        <!-- BLE Mesh Service -->
+        <service 
+            android:name=".services.BLEMeshService"
+            android:enabled="true"
+            android:exported="false" />
+        
+        <!-- Admin Activity -->
+        <activity 
+            android:name=".ui.AdminActivitySimple"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        
+        <!-- User Activity -->
+        <activity 
+            android:name=".ui.UserActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        
+        <!-- BLE Mesh Activity (Working BLE Interface) -->
+        <activity 
+            android:name=".ui.BLEMeshActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <!-- Main Activity -->
+        <activity 
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Main Activity Simple (Alternative) -->
+        <activity 
+            android:name=".ui.MainActivitySimple"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

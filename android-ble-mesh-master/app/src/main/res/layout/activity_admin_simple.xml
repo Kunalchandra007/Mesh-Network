@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#2196F3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Admin Panel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:onClick="logout" />
+
+    </LinearLayout>
+
+    <!-- Location Display -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: Getting location..."
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:background="#f5f5f5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Control Panel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Controls"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/sendAlertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 SEND EMERGENCY ALERT"
+            android:textColor="#ffffff"
+            android:background="@drawable/emergency_button"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast Message"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message to broadcast to all users..."
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/broadcastMessageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Broadcast Message"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- Status Info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel Features:\n• Send emergency alerts to all users\n• Broadcast messages to all users\n• View current location\n• Works without internet connection"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
