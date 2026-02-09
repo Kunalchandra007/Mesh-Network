@@ -216,9 +216,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/Mesh-Network/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/Mesh-Network/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/Kunalchandra007/Mesh-Network/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Kunalchandra007/Mesh-Network/discussions)
+- **Email**:kunalchandra2506@gmail.com
 
 ## 🔄 **Changelog**
 
